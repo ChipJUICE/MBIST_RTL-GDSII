@@ -1,0 +1,76 @@
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP5-5
+Date:        Wed Dec 24 14:56:54 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     28
+    Unconnected ports (LINT-28)                                    27
+    Feedthrough (LINT-29)                                           1
+
+Cells                                                              12
+    Connected to power or ground (LINT-32)                         11
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                                2
+    Unloaded nets (LINT-2)                                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'bist', net 'lt' driven by pin 'comp_init1/lt' has no loads. (LINT-2)
+Warning: In design 'bist', net 'gt' driven by pin 'comp_init1/gt' has no loads. (LINT-2)
+Warning: In design 'decoder', port 'data_t[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'decoder', port 'data_t[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'decoder', port 'data_t[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'decoder', port 'data_t[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'd_in[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'ld' is not connected to any nets. (LINT-28)
+Warning: In design 'counter_length10', port 'u_d' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplexer_WIDTH8', port 'bist_in[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplexer_WIDTH8', port 'bist_in[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplexer_WIDTH8', port 'bist_in[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'multiplexer_WIDTH8', port 'bist_in[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'controller', port 'ld' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'data_t[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'data_t[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'data_t[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'data_t[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'gt' is not connected to any nets. (LINT-28)
+Warning: In design 'comparator', port 'lt' is not connected to any nets. (LINT-28)
+Warning: In design 'decoder', input port 'q[0]' is connected directly to output port 'data_t[0]'. (LINT-29)
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[9]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[8]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[7]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[6]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[5]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[4]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[3]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[2]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[1]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'd_in[0]' is connected to logic 0. 
+Warning: In design 'bist', a pin on submodule 'cntr_inst1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'u_d' is connected to logic 1. 
+Warning: In design 'bist', the same net is connected to more than one pin on submodule 'cntr_inst1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'd_in[9]', 'd_in[8]'', 'd_in[7]', 'd_in[6]', 'd_in[5]', 'd_in[4]', 'd_in[3]', 'd_in[2]', 'd_in[1]', 'd_in[0]'.
+1

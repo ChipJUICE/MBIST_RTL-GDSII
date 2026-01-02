@@ -1,0 +1,367 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : bist
+Version: W-2024.09-SP5-5
+Date   : Wed Dec 24 14:57:22 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c
+Wire Load Model Mode: segmented
+
+  Startpoint: rst (input port clocked by CORE_CLK)
+  Endpoint: cont_inst1l/state_reg
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  controller         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  rst (in)                                                0.00       0.00 r
+  cont_inst1l/rst (controller)                            0.00       0.00 r
+  cont_inst1l/U4/ZN (AOI211D1BWP20P90)                    0.00       0.00 f
+  cont_inst1l/state_reg/D (DFQD1BWP20P90)                 0.00       0.00 f
+  data arrival time                                                  0.00
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cont_inst1l/state_reg/CP (DFQD1BWP20P90)                0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (VIOLATED: increase significant digits)                      0.00
+
+
+  Startpoint: opr (input port clocked by CORE_CLK)
+  Endpoint: fail (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CORE_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  opr (in)                                 0.00       0.00 f
+  U13/ZN (OAI211D1BWP20P90)                0.01       0.01 r
+  U11/ZN (NR2D1BWP20P90)                   0.00       0.01 f
+  fail (out)                               0.00       0.01 f
+  data arrival time                                   0.01
+
+  clock CORE_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                    0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+  Startpoint: csin (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  csin (in)                                               0.00       0.00 r
+  U12/Z (OR2D1BWP20P90)                                   0.02       0.02 r
+  sram_inst1/cs (sram)                                    0.00       0.02 r
+  sram_inst1/U64/ZN (OAI22D1BWP20P90)                     0.01       0.03 f
+  sram_inst1/addr_reg_reg[0]/D (DFQD1BWP20P90)            0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[0]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: csin (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[4]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  csin (in)                                               0.00       0.00 r
+  U12/Z (OR2D1BWP20P90)                                   0.02       0.02 r
+  sram_inst1/cs (sram)                                    0.00       0.02 r
+  sram_inst1/U55/ZN (OAI22D1BWP20P90)                     0.01       0.03 f
+  sram_inst1/addr_reg_reg[4]/D (DFQD1BWP20P90)            0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[4]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: csin (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  csin (in)                                               0.00       0.00 r
+  U12/Z (OR2D1BWP20P90)                                   0.02       0.02 r
+  sram_inst1/cs (sram)                                    0.00       0.02 r
+  sram_inst1/U58/ZN (OAI22D1BWP20P90)                     0.01       0.03 f
+  sram_inst1/addr_reg_reg[1]/D (DFQD1BWP20P90)            0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[1]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: csin (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  csin (in)                                               0.00       0.00 r
+  U12/Z (OR2D1BWP20P90)                                   0.02       0.02 r
+  sram_inst1/cs (sram)                                    0.00       0.02 r
+  sram_inst1/U52/ZN (OAI22D1BWP20P90)                     0.01       0.03 f
+  sram_inst1/addr_reg_reg[3]/D (DFQD1BWP20P90)            0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[3]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: csin (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  csin (in)                                               0.00       0.00 r
+  U12/Z (OR2D1BWP20P90)                                   0.02       0.02 r
+  sram_inst1/cs (sram)                                    0.00       0.02 r
+  sram_inst1/U61/ZN (OAI22D1BWP20P90)                     0.01       0.03 f
+  sram_inst1/addr_reg_reg[2]/D (DFQD1BWP20P90)            0.00       0.03 f
+  data arrival time                                                  0.03
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[2]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: address[5] (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/addr_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  multiplexer_WIDTH6 ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  address[5] (in)                                         0.00       0.00 f
+  MUX_A/normal_in[5] (multiplexer_WIDTH6)                 0.00       0.00 f
+  MUX_A/U2/Z (AO22D1BWP20P90)                             0.02       0.02 f
+  MUX_A/out[5] (multiplexer_WIDTH6)                       0.00       0.02 f
+  sram_inst1/ramaddr[5] (sram)                            0.00       0.02 f
+  sram_inst1/U15/Z (AO22D1BWP20P90)                       0.02       0.04 f
+  sram_inst1/addr_reg_reg[5]/D (DFQD1BWP20P90)            0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  sram_inst1/addr_reg_reg[5]/CP (DFQD1BWP20P90)           0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: cntr_inst1/q_reg[4]
+              (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Endpoint: cntr_inst1/q_reg[4]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  controller         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  counter_length10   ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  multiplexer_WIDTH6 ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cntr_inst1/q_reg[4]/CP (DFQD1BWP20P90)                  0.00       0.00 r
+  cntr_inst1/q_reg[4]/Q (DFQD1BWP20P90)                   0.04       0.04 r
+  cntr_inst1/U38/ZN (OAI32D1BWP20P90)                     0.01       0.06 f
+  cntr_inst1/q_reg[4]/D (DFQD1BWP20P90)                   0.00       0.06 f
+  data arrival time                                                  0.06
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cntr_inst1/q_reg[4]/CP (DFQD1BWP20P90)                  0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[3] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 f
+  rwbarin (in)                                            0.00       0.00 f
+  U14/ZN (INVD1BWP20P90)                                  0.00       0.00 r
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       0.02 f
+  sram_inst1/rwbar (sram)                                 0.00       0.02 f
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.02       0.04 r
+  sram_inst1/U415/ZN (AOI211D1BWP20P90)                   0.01       0.05 f
+  sram_inst1/ramout[3] (sram)                             0.00       0.05 f
+  dataout[3] (out)                                        0.00       0.05 f
+  data arrival time                                                  0.05
+
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  output external delay                                   0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.05
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1

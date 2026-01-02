@@ -1,0 +1,403 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : bist
+Version: W-2024.09-SP5-5
+Date   : Wed Dec 24 14:57:22 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: N16ADFP_StdCelltt0p8v25c
+Wire Load Model Mode: segmented
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: fail (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U459/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[1] (sram)                             0.00       1.07 r
+  comp_init1/ramout[1] (comparator)                       0.00       1.07 r
+  comp_init1/U1/ZN (INVD1BWP20P90)                        0.01       1.08 f
+  comp_init1/U13/ZN (AOI22D1BWP20P90)                     0.01       1.10 r
+  comp_init1/U14/ZN (OAI211D1BWP20P90)                    0.02       1.11 f
+  comp_init1/U15/ZN (INR4D1BWP20P90)                      0.01       1.13 r
+  comp_init1/eq (comparator)                              0.00       1.13 r
+  U11/ZN (NR2D1BWP20P90)                                  0.01       1.13 f
+  fail (out)                                              0.00       1.13 f
+  data arrival time                                                  1.13
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.13
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.67
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[5] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U195/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[5] (sram)                             0.00       1.07 r
+  dataout[5] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[0] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U283/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[0] (sram)                             0.00       1.07 r
+  dataout[0] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[4] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U151/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[4] (sram)                             0.00       1.07 r
+  dataout[4] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[2] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U371/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[2] (sram)                             0.00       1.07 r
+  dataout[2] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[7] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U239/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[7] (sram)                             0.00       1.07 r
+  dataout[7] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[1] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U459/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[1] (sram)                             0.00       1.07 r
+  dataout[1] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[6] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U327/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[6] (sram)                             0.00       1.07 r
+  dataout[6] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: rwbarin (input port clocked by CORE_CLK)
+  Endpoint: dataout[3] (output port clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  comparator         ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 r
+  rwbarin (in)                                            0.00       1.00 r
+  U14/ZN (INVD1BWP20P90)                                  0.00       1.00 f
+  U15/ZN (MOAI22D1BWP20P90)                               0.01       1.02 r
+  sram_inst1/rwbar (sram)                                 0.00       1.02 r
+  sram_inst1/U150/ZN (ND2D1BWP20P90)                      0.03       1.05 f
+  sram_inst1/U415/ZN (AOI211D1BWP20P90)                   0.02       1.07 r
+  sram_inst1/ramout[3] (sram)                             0.00       1.07 r
+  dataout[3] (out)                                        0.00       1.07 r
+  data arrival time                                                  1.07
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  output external delay                                  -1.00       4.80
+  data required time                                                 4.80
+  --------------------------------------------------------------------------
+  data required time                                                 4.80
+  data arrival time                                                 -1.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.73
+
+
+  Startpoint: datain[0] (input port clocked by CORE_CLK)
+  Endpoint: sram_inst1/ram_reg[0][0]
+            (rising edge-triggered flip-flop clocked by CORE_CLK)
+  Path Group: CORE_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bist               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  multiplexer_WIDTH8 ZeroWireload          N16ADFP_StdCelltt0p8v25c
+  sram               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CORE_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  datain[0] (in)                                          0.00       1.00 f
+  MUX_D/normal_in[0] (multiplexer_WIDTH8)                 0.00       1.00 f
+  MUX_D/U10/ZN (IOA21D1BWP20P90)                          0.15       1.15 f
+  MUX_D/out[0] (multiplexer_WIDTH8)                       0.00       1.15 f
+  sram_inst1/ramin[0] (sram)                              0.00       1.15 f
+  sram_inst1/U1073/Z (AO22D1BWP20P90)                     0.05       1.20 f
+  sram_inst1/ram_reg[0][0]/D (DFQD1BWP20P90)              0.00       1.20 f
+  data arrival time                                                  1.20
+
+  clock CORE_CLK (rise edge)                              6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.20       5.80
+  sram_inst1/ram_reg[0][0]/CP (DFQD1BWP20P90)             0.00       5.80 r
+  library setup time                                      0.00       5.80
+  data required time                                                 5.80
+  --------------------------------------------------------------------------
+  data required time                                                 5.80
+  data arrival time                                                 -1.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.59
+
+
+1

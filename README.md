@@ -44,28 +44,52 @@ The top-level **BIST** module integrates the following blocks:
 ```
 MBIST/
 │
-├── src/
-│   ├── comparator.sv
-│   ├── counter.sv
-│   ├── decoder.sv
-│   ├── controller.sv
-│   ├── multiplexer.sv
-│   ├── sram.sv
-│   └── bist.sv
+├── MBIST/
+│   ├── constraints/
+│   │   └── controller.sdc
+│   ├── src/
+│   │   ├── comparator.sv
+│   │   ├── counter.sv
+│   │   ├── decoder.sv
+│   │   ├── controller.sv
+│   │   ├── multiplexer.sv
+│   │   ├── sram.sv
+│   │   └── bist.sv
+│   └── tb/
+│       ├── tb_comparator.sv
+│       ├── tb_counter.sv
+│       ├── tb_decoder.sv
+│       ├── tb_controller.sv
+│       ├── tb_multiplexer.sv
+│       ├── tb_sram.sv
+│       └── tb_bist.sv
 │
-├── tb/
-│   ├── tb_comparator.sv
-│   ├── tb_counter.sv
-│   ├── tb_decoder.sv
-│   ├── tb_controller.sv
-│   ├── tb_multiplexer.sv
-│   ├── tb_sram.sv
-│   └── tb_bist.sv
+├── Physical_design/
+│   ├── constraints/
+│   │   └── physical.sdc
+│   ├── netlist/
+│   │   └── bist_synth.v
+│   ├── scripts/
+│   │   ├── init_innovus.tcl
+│   │   ├── floorplan.tcl
+│   │   ├── power_plan.tcl
+│   │   ├── place.tcl
+│   │   ├── cts.tcl
+│   │   └── route.tcl
+│   ├── output/
+│   │   ├── bist.gds
+│   │   ├── bist.def
+│   │   ├── timing_reports/
+│   │   └── drc_lvs_reports/
+│   ├── Layout.png
+│   └── schematic.png
 │
-├── constraints/
-│   └── controller.sdc
+├── VCS/
+│   ├── compiler.log
+│   └── simv
 │
 └── README.md
+
 ```
 
 ---

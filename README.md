@@ -1,4 +1,4 @@
-# 🧪 MBIST Project – 64×8 SRAM Built-In Self-Test  
+# 💾 MBIST Project – 64×8 SRAM Built-In Self-Test  
 
 ## 📘 Overview
 This repository contains the complete **Memory Built-In Self-Test (MBIST)** implementation for a **64 × 8-bit single-port SRAM** using **SystemVerilog**.  

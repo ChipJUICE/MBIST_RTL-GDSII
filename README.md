@@ -9,6 +9,7 @@ The design covers **full front-end and back-end implementation**, including:
 - Modular functional testbenches for each sub-block
 - Logic synthesis in **Synopsys Design Compiler** with timing constraints
 - Full **RTL → GDSII physical design flow** using **Cadence Innovus**
+- Physical implementation using **TSMC 16nm PDK**
 - Generation of **DRC-clean and LVS-clean GDSII**
 
 ---
@@ -101,7 +102,8 @@ set_clock_latency 0.01 -source [get_ports clk]
 The synthesized MBIST netlist was taken through a **complete digital physical design flow**, validating the design as a manufacturable digital block.
 
 ### 🔧 Physical Design Flow
-- **Tool:** Cadence Innovus Implementation System  
+- **Tool:** Cadence Innovus Implementation System
+- **Technology:** TSMC 16nm PDK
 - **Implementation Style:** Standard-cell only (no SRAM macros)  
 - **Floorplan:** Compact **60 µm × 60 µm** core area  
 - **Power Planning:** Dedicated VDD/VSS power rings on upper metal layers  
